@@ -47,7 +47,6 @@ This notebook demonstrates how to:
 
 ## 🚀 How to Run
 
-1. Clone the repository:
 ```bash
 git clone git@github.com:kowi-kowi/torun_map.git
 cd torun_map
