@@ -4,13 +4,17 @@ import pandas as pd
 query = """
 SELECT ?item ?itemLabel ?description ?lat ?lon ?image WHERE {
   ?item wdt:P31/wdt:P279* wd:Q570116;
-        wdt:P131 wd:Q1792;
         wdt:P625 ?coord.
   OPTIONAL { ?item wdt:P18 ?image }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "pl,en". }
+  
   BIND(geof:latitude(?coord) AS ?lat)
   BIND(geof:longitude(?coord) AS ?lon)
+  
+  FILTER(?lat > 53.0 && ?lat < 53.1)
+  FILTER(?lon > 18.55 && ?lon < 18.65)
 }
+
 """
 
 url = "https://query.wikidata.org/bigdata/namespace/wdq/sparql?format=json"

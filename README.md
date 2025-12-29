@@ -4,6 +4,8 @@ An interactive geospatial project exploring **Toruń (Poland)** — the birthpla
 
 The project combines **open geospatial data** and **cultural heritage information** to create an interactive web map of the city’s main attractions.
 
+Map available here -> https://kowi-kowi.github.io/torun_map_layered.html
+
 ---
 
 ## 🌍 Project Overview
