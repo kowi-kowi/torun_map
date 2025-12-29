@@ -52,7 +52,8 @@ This notebook demonstrates how to:
 git clone git@github.com:kowi-kowi/torun_map.git
 cd torun_map
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook 
+```
 
 
 📌 Data Sources
