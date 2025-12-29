@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
-
+# Q47554 - Toruń
+# Q570116 - zabytek historyczny
 query = """
 SELECT ?item ?itemLabel ?description ?lat ?lon ?image WHERE {
   ?item wdt:P31/wdt:P279* wd:Q570116;
